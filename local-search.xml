@@ -4,16 +4,70 @@
   
   
   <entry>
-    <title>常用工具整理</title>
-    <link href="/2020/09/11/001-tools-index/"/>
-    <url>/2020/09/11/001-tools-index/</url>
+    <title>PTES 渗透测试执行标准</title>
+    <link href="/2020/09/16/003-PTES/"/>
+    <url>/2020/09/16/003-PTES/</url>
     
-    <content type="html"><![CDATA[<p>｜经典工具｜信息收集｜扫描工具｜爬虫工具｜</p><a id="more"></a><h2 id="经典工具"><a href="#经典工具" class="headerlink" title="经典工具"></a>经典工具</h2><ul><li>Burp Suite | <a href="https://portswigger.net/">https://portswigger.net/</a> | <a href="https://portswigger.net/web-security">https://portswigger.net/web-security</a></li><li>SqlMap | <a href="http://sqlmap.org/">http://sqlmap.org/</a> | <a href="https://github.com/sqlmapproject/sqlmap">https://github.com/sqlmapproject/sqlmap</a></li><li>Nmap | <a href="https://nmap.org/">https://nmap.org/</a> | <a href="https://nmap.org/book/man.html">https://nmap.org/book/man.html</a></li><li>Wireshark | <a href="https://www.wireshark.org/">https://www.wireshark.org/</a> | <a href="https://www.wireshark.org/docs/wsug_html_chunked/">https://www.wireshark.org/docs/wsug_html_chunked/</a></li></ul><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><ul><li>Shodan | 网络空间搜索引擎 | <a href="https://www.shodan.io/">https://www.shodan.io/</a></li><li>Sublist3r | 子域名发现工具 | <a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a></li><li>Dircrack | 目录扫描工具 | <a href="https://github.com/clowndmn/DirCrack">https://github.com/clowndmn/DirCrack</a></li><li>GoBy | 资产扫描工具 | <a href="https://cn.gobies.org/">https://cn.gobies.org/</a></li><li>WhatWeb | 网站指纹识别 | <a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></li></ul><h2 id="扫描工具"><a href="#扫描工具" class="headerlink" title="扫描工具"></a>扫描工具</h2><ul><li>Nmap | 经典的综合扫描工具 | <a href="https://nmap.org/book/man.html">https://nmap.org/book/man.html</a></li><li>BBScan | 高并发漏洞扫描工具 | <a href="https://github.com/lijiejie/BBScan">https://github.com/lijiejie/BBScan</a></li><li>Xray | 综合Web漏洞扫描器 | <a href="https://github.com/chaitin/xray/">https://github.com/chaitin/xray/</a> | 社区版免费</li></ul><h2 id="爬虫工具"><a href="#爬虫工具" class="headerlink" title="爬虫工具"></a>爬虫工具</h2><ul><li>CrawlerGo | 动态网络爬虫工具 | <a href="https://github.com/0Kee-Team/crawlergo/">https://github.com/0Kee-Team/crawlergo/</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>【参考文献】<a href="http://www.pentest-standard.org/index.php/Main_Page">http://www.pentest-standard.org/index.php/Main_Page</a></p><a id="more"></a><h2 id="Main-Page-主页"><a href="#Main-Page-主页" class="headerlink" title="Main Page | 主页"></a>Main Page | 主页</h2><h3 id="High-Level-Organization-of-the-Standard"><a href="#High-Level-Organization-of-the-Standard" class="headerlink" title="High Level Organization of the Standard"></a>High Level Organization of the Standard</h3><blockquote><p>The penetration testing execution standard consists of seven (7) main sections. These cover everything related to a penetration test - from the initial communication and reasoning behind a pentest, through the intelligence gathering and threat modeling phases where testers are working behind the scenes in order to get a better understanding of the tested organization, through vulnerability research, exploitation and post exploitation, where the technical security expertise of the testers come to play and combine with the business understanding of the engagement, and finally to the reporting, which captures the entire process, in a manner that makes sense to the customer and provides the most value to it.</p></blockquote><p>渗透测试执行标准由七个主要部分组成。这些内容涵盖了与渗透测试相关的所有内容-从最初的沟通和渗透测试到推理，再到情报收集和威胁建模阶段，测试人员都在幕后进行工作，以便通过漏洞研究更好地了解被测组织，开发和后期开发，在此过程中，测试人员的技术安全专业知识将发挥作用，并与业务参与的业务理解相结合，最后是报告，该报告以对客户有意义的方式捕获了整个过程，并赋予其价值。</p><br/><a class="btn">未完待续</a>]]></content>
     
     
     <categories>
       
-      <category>Tools Index</category>
+      <category>Methodology</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Study</tag>
+      
+      <tag>Standard</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>渗透术语集</title>
+    <link href="/2020/09/16/002-terms-index/"/>
+    <url>/2020/09/16/002-terms-index/</url>
+    
+    <content type="html"><![CDATA[<h3 id="慢慢总结一些常见的术语"><a href="#慢慢总结一些常见的术语" class="headerlink" title="慢慢总结一些常见的术语"></a>慢慢总结一些常见的术语</h3><a id="more"></a><ul><li>Penetration Testing | 渗透测试</li><li>Exploit | 渗透攻击</li><li>Payload | 有效负载/攻击载荷</li><li>Shellcode</li><li>Listener</li><li><strong>ATT&amp;CK</strong> | Adversarial Tatics, Techniques and Common Knowledge</li><li>White-box Testing</li><li>Black-box Testing</li><li>Grey-box Testing</li><li><strong>PTES</strong> | Penetration Testing Execution Standard</li></ul><br/><a class="btn">未完待续</a>]]></content>
+    
+    
+    <categories>
+      
+      <category>Index</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Collections</tag>
+      
+      <tag>Terminology</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>常用工具整理</title>
+    <link href="/2020/09/11/001-tools-index/"/>
+    <url>/2020/09/11/001-tools-index/</url>
+    
+    <content type="html"><![CDATA[<p>｜经典工具｜信息收集｜扫描工具｜爬虫工具｜</p><a id="more"></a><h2 id="经典工具"><a href="#经典工具" class="headerlink" title="经典工具"></a>经典工具</h2><ul><li>Burp Suite | <a href="https://portswigger.net/">https://portswigger.net/</a> | <a href="https://portswigger.net/web-security">https://portswigger.net/web-security</a></li><li>SqlMap | <a href="http://sqlmap.org/">http://sqlmap.org/</a> | <a href="https://github.com/sqlmapproject/sqlmap">https://github.com/sqlmapproject/sqlmap</a></li><li>Nmap | <a href="https://nmap.org/">https://nmap.org/</a> | <a href="https://nmap.org/book/man.html">https://nmap.org/book/man.html</a></li><li>Wireshark | <a href="https://www.wireshark.org/">https://www.wireshark.org/</a> | <a href="https://www.wireshark.org/docs/wsug_html_chunked/">https://www.wireshark.org/docs/wsug_html_chunked/</a></li></ul><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><ul><li>Shodan | 网络空间搜索引擎 | <a href="https://www.shodan.io/">https://www.shodan.io/</a></li><li>Sublist3r | 子域名发现工具 | <a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a></li><li>Dircrack | 目录扫描工具 | <a href="https://github.com/clowndmn/DirCrack">https://github.com/clowndmn/DirCrack</a></li><li>GoBy | 资产扫描工具 | <a href="https://cn.gobies.org/">https://cn.gobies.org/</a></li><li>WhatWeb | 网站指纹识别 | <a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></li></ul><h2 id="扫描工具"><a href="#扫描工具" class="headerlink" title="扫描工具"></a>扫描工具</h2><ul><li>Nmap | 经典的综合扫描工具 | <a href="https://nmap.org/book/man.html">https://nmap.org/book/man.html</a></li><li>BBScan | 高并发漏洞扫描工具 | <a href="https://github.com/lijiejie/BBScan">https://github.com/lijiejie/BBScan</a></li><li>Xray | 综合Web漏洞扫描器 | <a href="https://github.com/chaitin/xray/">https://github.com/chaitin/xray/</a> | 社区版免费</li></ul><h2 id="爬虫工具"><a href="#爬虫工具" class="headerlink" title="爬虫工具"></a>爬虫工具</h2><ul><li>CrawlerGo | 动态网络爬虫工具 | <a href="https://github.com/0Kee-Team/crawlergo/">https://github.com/0Kee-Team/crawlergo/</a></li></ul><br/><a class="btn">未完待续</a>]]></content>
+    
+    
+    <categories>
+      
+      <category>Index</category>
       
     </categories>
     
