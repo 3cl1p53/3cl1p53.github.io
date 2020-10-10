@@ -4,6 +4,58 @@
   
   
   <entry>
+    <title>【Problem001】解决方案</title>
+    <link href="/2020/10/10/011-github-connection/"/>
+    <url>/2020/10/10/011-github-connection/</url>
+    
+    <content type="html"><![CDATA[<p>解决GitHub的raw.githubusercontent.com无法连接问题的方案</p><a id="more"></a><h2 id="0x01-查询IP地址"><a href="#0x01-查询IP地址" class="headerlink" title="0x01 查询IP地址"></a>0x01 查询IP地址</h2><p><a href="https://site.ip138.com/raw.Githubusercontent.com/">https://site.ip138.com/raw.Githubusercontent.com/</a></p><h2 id="0x02-修改hosts文件"><a href="#0x02-修改hosts文件" class="headerlink" title="0x02 修改hosts文件"></a>0x02 修改hosts文件</h2><p>IP地址查询后相应修改，可以ping不同IP的延时，然后选择最佳IP地址</p><pre><code class="hljs bash">sudo vim /etc/hosts</code></pre><pre><code class="hljs bash"><span class="hljs-comment"># /etc/hosts</span><span class="hljs-comment"># ========= Github Start =========</span>151.101.108.133 raw.githubusercontent.com151.101.228.133 raw.githubusercontent.com151.101.76.133 raw.githubusercontent.com<span class="hljs-comment"># ========= Github   End =========</span></code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Problems</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Problem Solving</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>🔝 常见问题综述</title>
+    <link href="/2020/10/10/000-problems-index/"/>
+    <url>/2020/10/10/000-problems-index/</url>
+    
+    <content type="html"><![CDATA[<p>整理各种情况下出现的常见问题</p><a id="more"></a><h2 id="【Problem001】raw-githubusercontent-com无法连接问题"><a href="#【Problem001】raw-githubusercontent-com无法连接问题" class="headerlink" title="【Problem001】raw.githubusercontent.com无法连接问题"></a><a href="/2020/10/10/011-github-connection/">【Problem001】raw.githubusercontent.com无法连接问题</a></h2><p>问题描述：例如在安装oh-my-zsh中，使用<code>sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code>命令安装<br>的时候会出现raw.githubusercontent.com无法连接的问题<br><img src="/img/blog_imgs/000-problems-index/01.png"></img></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Index</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Problem Solving</tag>
+      
+      <tag>Collections</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Proxychains</title>
     <link href="/2020/10/10/010-proxychains/"/>
     <url>/2020/10/10/010-proxychains/</url>
@@ -72,9 +124,9 @@
     
     <tags>
       
-      <tag>Vulnerability</tag>
-      
       <tag>Web</tag>
+      
+      <tag>Vulnerability</tag>
       
       <tag>Learning</tag>
       
@@ -160,11 +212,11 @@
   
   
   <entry>
-    <title>资讯&amp;论坛&amp;博文集</title>
+    <title>🔝 资讯&amp;论坛&amp;博文集</title>
     <link href="/2020/09/16/004-fantastic-blogs/"/>
     <url>/2020/09/16/004-fantastic-blogs/</url>
     
-    <content type="html"><![CDATA[<p>｜安全资讯类｜安全学习论坛｜知识库｜经验分享类｜安全知识类｜工具分享类｜CTF-Web解答｜杂项</p><a id="more"></a><h2 id="0x01-安全资讯类"><a href="#0x01-安全资讯类" class="headerlink" title="0x01 安全资讯类"></a>0x01 安全资讯类</h2><ul><li>SecWiki | <a href="https://www.sec-wiki.com/index.php">https://www.sec-wiki.com/index.php</a></li><li>FreeBuf | <a href="https://www.freebuf.com/">https://www.freebuf.com/</a></li><li>安全客 | <a href="https://www.anquanke.com/">https://www.anquanke.com/</a></li><li>Sec-News | <a href="https://wiki.ioin.in/">https://wiki.ioin.in/</a></li><li>SecurityTrails | <a href="https://securitytrails.com/blog">https://securitytrails.com/blog</a></li></ul><h2 id="0x02-安全学习论坛"><a href="#0x02-安全学习论坛" class="headerlink" title="0x02 安全学习论坛"></a>0x02 安全学习论坛</h2><ul><li>吾爱破解 | <a href="https://www.52pojie.cn/forum.php">https://www.52pojie.cn/forum.php</a></li><li>看雪论坛 | <a href="https://bbs.pediy.com/">https://bbs.pediy.com/</a></li></ul><h2 id="0x03-知识库"><a href="#0x03-知识库" class="headerlink" title="0x03 知识库"></a>0x03 知识库</h2><ul><li>看雪知识库 | <a href="https://www.kanxue.com/chm.htm">https://www.kanxue.com/chm.htm</a></li><li>CTF Wiki | <a href="https://ctf-wiki.github.io/ctf-wiki/">https://ctf-wiki.github.io/ctf-wiki/</a></li><li>CTF-Tools Wiki | <a href="https://ctf-wiki.github.io/ctf-tools/">https://ctf-wiki.github.io/ctf-tools/</a></li></ul><h2 id="0x04-经验分享类"><a href="#0x04-经验分享类" class="headerlink" title="0x04 经验分享类"></a>0x04 经验分享类</h2><ul><li>如何评价自己的安全工作 | <a href="https://zhuanlan.zhihu.com/p/226493047">https://zhuanlan.zhihu.com/p/226493047</a></li><li>Reasons Why Every Business Needs a Routine Vulnerability Assessment | <a href="https://www.indusface.com/blog/">https://www.indusface.com/blog/</a></li></ul><h2 id="0x05-安全知识类"><a href="#0x05-安全知识类" class="headerlink" title="0x05 安全知识类"></a>0x05 安全知识类</h2><ul><li>巧遇蜜罐，冷静对待 ｜ <a href="https://mp.weixin.qq.com/s/YBge1xjpjQjQ-NoK4kK6RQ">https://mp.weixin.qq.com/s/YBge1xjpjQjQ-NoK4kK6RQ</a></li><li>渗透中 PoC、Exp、Payload 与 Shellcode 的区别 | <a href="https://howiezhao.github.io/2018/04/29/payload-shellcode-exp-poc/">https://howiezhao.github.io/2018/04/29/payload-shellcode-exp-poc/</a></li><li>SQL Injection Payload List | <a href="https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b">https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b</a></li></ul><h2 id="0x06-工具分享类"><a href="#0x06-工具分享类" class="headerlink" title="0x06 工具分享类"></a>0x06 工具分享类</h2><h3 id="未分类"><a href="#未分类" class="headerlink" title="未分类"></a>未分类</h3><ul><li>Top 25 OSINT Tools for Penetration Testing | <a href="https://securitytrails.com/blog/osint-tools">https://securitytrails.com/blog/osint-tools</a></li><li>Exploring Google Hacking Techniques | <a href="https://securitytrails.com/blog/google-hacking-techniques">https://securitytrails.com/blog/google-hacking-techniques</a></li><li>Finder的实用技巧 | <a href="https://sspai.com/post/27403">https://sspai.com/post/27403</a></li><li>How To Use Proxychains Kali Linux | <a href="https://online-it.nu/how-to-use-proxychains-kali-linux/?print=print">https://online-it.nu/how-to-use-proxychains-kali-linux/?print=print</a></li></ul><h3 id="Social-Engineering"><a href="#Social-Engineering" class="headerlink" title="Social Engineering"></a>Social Engineering</h3><ul><li>红队攻击：轻松玩转邮件钓鱼 | <a href="https://www.jianshu.com/p/8f5c5ef25db9">https://www.jianshu.com/p/8f5c5ef25db9</a></li><li>社会工程学工具集Social-Engineer Toolkit基础使用教程 | <a href="https://www.freebuf.com/sectool/73409.html">https://www.freebuf.com/sectool/73409.html</a></li><li>社会工程学工具包：Social-Engineer Toolkit（SET）| <a href="https://www.uedbox.com/post/57761/">https://www.uedbox.com/post/57761/</a></li></ul><h3 id="Docker相关"><a href="#Docker相关" class="headerlink" title="Docker相关"></a>Docker相关</h3><ul><li>Docker Desktop on Mac vs. Docker Toolbox | <a href="https://docs.docker.com/docker-for-mac/docker-toolbox/">https://docs.docker.com/docker-for-mac/docker-toolbox/</a></li><li>macOS上使用kali-linux for docker | <a href="http://www.gandalf.site/2018/12/macoskali-linux-for-docker.html">http://www.gandalf.site/2018/12/macoskali-linux-for-docker.html</a></li></ul><h2 id="0x07-CTF-Web解答"><a href="#0x07-CTF-Web解答" class="headerlink" title="0x07 CTF-Web解答"></a>0x07 CTF-Web解答</h2><ul><li>HCTF 2018 WriteUp | <a href="https://impakho.com/post/hctf-2018-writeup#toc-7">https://impakho.com/post/hctf-2018-writeup#toc-7</a></li><li>BUUCTF[强网杯 2019]随便注的三种解法 | <a href="https://blog.csdn.net/qq_44657899/article/details/103239145">https://blog.csdn.net/qq_44657899/article/details/103239145</a></li></ul><h2 id="0x08-杂项"><a href="#0x08-杂项" class="headerlink" title="0x08 杂项"></a>0x08 杂项</h2><ul><li>Markdown中的代码块 | <a href="https://gohom.win/2015/07/10/fench-code-markdown/">https://gohom.win/2015/07/10/fench-code-markdown/</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>｜安全资讯类｜安全学习论坛｜知识库｜经验分享类｜安全知识类｜工具分享类｜CTF-Web解答｜杂项</p><a id="more"></a><h2 id="0x01-安全资讯类"><a href="#0x01-安全资讯类" class="headerlink" title="0x01 安全资讯类"></a>0x01 安全资讯类</h2><ul><li>SecWiki | <a href="https://www.sec-wiki.com/index.php">https://www.sec-wiki.com/index.php</a></li><li>FreeBuf | <a href="https://www.freebuf.com/">https://www.freebuf.com/</a></li><li>安全客 | <a href="https://www.anquanke.com/">https://www.anquanke.com/</a></li><li>Sec-News | <a href="https://wiki.ioin.in/">https://wiki.ioin.in/</a></li><li>SecurityTrails | <a href="https://securitytrails.com/blog">https://securitytrails.com/blog</a></li></ul><h2 id="0x02-安全学习论坛"><a href="#0x02-安全学习论坛" class="headerlink" title="0x02 安全学习论坛"></a>0x02 安全学习论坛</h2><ul><li>吾爱破解 | <a href="https://www.52pojie.cn/forum.php">https://www.52pojie.cn/forum.php</a></li><li>看雪论坛 | <a href="https://bbs.pediy.com/">https://bbs.pediy.com/</a></li></ul><h2 id="0x03-知识库"><a href="#0x03-知识库" class="headerlink" title="0x03 知识库"></a>0x03 知识库</h2><ul><li>看雪知识库 | <a href="https://www.kanxue.com/chm.htm">https://www.kanxue.com/chm.htm</a></li><li>CTF Wiki | <a href="https://ctf-wiki.github.io/ctf-wiki/">https://ctf-wiki.github.io/ctf-wiki/</a></li><li>CTF-Tools Wiki | <a href="https://ctf-wiki.github.io/ctf-tools/">https://ctf-wiki.github.io/ctf-tools/</a></li></ul><h2 id="0x04-经验分享类"><a href="#0x04-经验分享类" class="headerlink" title="0x04 经验分享类"></a>0x04 经验分享类</h2><ul><li>如何评价自己的安全工作 | <a href="https://zhuanlan.zhihu.com/p/226493047">https://zhuanlan.zhihu.com/p/226493047</a></li><li>Reasons Why Every Business Needs a Routine Vulnerability Assessment | <a href="https://www.indusface.com/blog/">https://www.indusface.com/blog/</a></li></ul><h2 id="0x05-安全知识类"><a href="#0x05-安全知识类" class="headerlink" title="0x05 安全知识类"></a>0x05 安全知识类</h2><ul><li>巧遇蜜罐，冷静对待 ｜ <a href="https://mp.weixin.qq.com/s/YBge1xjpjQjQ-NoK4kK6RQ">https://mp.weixin.qq.com/s/YBge1xjpjQjQ-NoK4kK6RQ</a></li><li>渗透中 PoC、Exp、Payload 与 Shellcode 的区别 | <a href="https://howiezhao.github.io/2018/04/29/payload-shellcode-exp-poc/">https://howiezhao.github.io/2018/04/29/payload-shellcode-exp-poc/</a></li><li>SQL Injection Payload List | <a href="https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b">https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b</a></li></ul><h2 id="0x06-工具分享类"><a href="#0x06-工具分享类" class="headerlink" title="0x06 工具分享类"></a>0x06 工具分享类</h2><h3 id="未分类"><a href="#未分类" class="headerlink" title="未分类"></a>未分类</h3><ul><li>Top 25 OSINT Tools for Penetration Testing | <a href="https://securitytrails.com/blog/osint-tools">https://securitytrails.com/blog/osint-tools</a></li><li>Exploring Google Hacking Techniques | <a href="https://securitytrails.com/blog/google-hacking-techniques">https://securitytrails.com/blog/google-hacking-techniques</a></li><li>Finder的实用技巧 | <a href="https://sspai.com/post/27403">https://sspai.com/post/27403</a></li><li>How To Use Proxychains Kali Linux | <a href="https://online-it.nu/how-to-use-proxychains-kali-linux/?print=print">https://online-it.nu/how-to-use-proxychains-kali-linux/?print=print</a></li></ul><h3 id="Social-Engineering"><a href="#Social-Engineering" class="headerlink" title="Social Engineering"></a>Social Engineering</h3><ul><li>红队攻击：轻松玩转邮件钓鱼 | <a href="https://www.jianshu.com/p/8f5c5ef25db9">https://www.jianshu.com/p/8f5c5ef25db9</a></li><li>社会工程学工具集Social-Engineer Toolkit基础使用教程 | <a href="https://www.freebuf.com/sectool/73409.html">https://www.freebuf.com/sectool/73409.html</a></li><li>社会工程学工具包：Social-Engineer Toolkit（SET）| <a href="https://www.uedbox.com/post/57761/">https://www.uedbox.com/post/57761/</a></li></ul><h3 id="Docker相关"><a href="#Docker相关" class="headerlink" title="Docker相关"></a>Docker相关</h3><ul><li>Docker Desktop on Mac vs. Docker Toolbox | <a href="https://docs.docker.com/docker-for-mac/docker-toolbox/">https://docs.docker.com/docker-for-mac/docker-toolbox/</a></li><li>macOS上使用kali-linux for docker | <a href="http://www.gandalf.site/2018/12/macoskali-linux-for-docker.html">http://www.gandalf.site/2018/12/macoskali-linux-for-docker.html</a></li></ul><h2 id="0x07-CTF-Web解答"><a href="#0x07-CTF-Web解答" class="headerlink" title="0x07 CTF-Web解答"></a>0x07 CTF-Web解答</h2><ul><li>HCTF 2018 WriteUp | <a href="https://impakho.com/post/hctf-2018-writeup#toc-7">https://impakho.com/post/hctf-2018-writeup#toc-7</a></li><li>BUUCTF[强网杯 2019]随便注的三种解法 | <a href="https://blog.csdn.net/qq_44657899/article/details/103239145">https://blog.csdn.net/qq_44657899/article/details/103239145</a></li></ul><h2 id="0x08-杂项"><a href="#0x08-杂项" class="headerlink" title="0x08 杂项"></a>0x08 杂项</h2><ul><li>Markdown中的代码块 | <a href="https://gohom.win/2015/07/10/fench-code-markdown/">https://gohom.win/2015/07/10/fench-code-markdown/</a></li><li>Hexo博客经验分享 | <a href="https://ehlxr.me/2016/08/30/">https://ehlxr.me/2016/08/30/</a></li></ul>]]></content>
     
     
     <categories>
@@ -234,9 +286,9 @@
     
     <tags>
       
-      <tag>Terminology</tag>
-      
       <tag>Collections</tag>
+      
+      <tag>Terminology</tag>
       
     </tags>
     
@@ -245,7 +297,7 @@
   
   
   <entry>
-    <title>常用工具集(含网址)</title>
+    <title>🔝 常用工具集(含网址)</title>
     <link href="/2020/09/11/001-tools-index/"/>
     <url>/2020/09/11/001-tools-index/</url>
     
