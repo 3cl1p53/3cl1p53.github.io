@@ -17,10 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="3cl1p53">
   <meta name="keywords" content="">
-  <title>标签 - Vulnerability - 3cl1p53 の blog</title>
+  <title>Proxychains - 3cl1p53 の blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -137,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/main_imgs/tag001.jpg') no-repeat center center;
+         style="background: url('/img/blog_imgs/010-proxychains/banner-img.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -145,6 +158,48 @@
             <span class="h2" id="subtitle">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      3cl1p53
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-10-10 14:55" pubdate>
+        2020年10月10日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      179 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -157,43 +212,119 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/09/30/009-sql-injection/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SQL Injection</span>
-      <time style="float: right;">09-30</time>
-    </a>
-  
-    
-    <a href="/2020/09/28/008-Web-Vulnerability-Learning/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Web安全漏洞原理学习</span>
-      <time style="float: right;">09-28</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">Proxychains</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>Proxychains使用心得</p>
+<a id="more"></a>
 
+<h2 id="0x01-下载安装"><a href="#0x01-下载安装" class="headerlink" title="0x01 下载安装"></a>0x01 下载安装</h2><p>Kali Linux中自带这个工具</p>
+<details>
+<summary>官方地址：https://github.com/rofl0r/proxychains-ng</summary>
+<pre><code class="hljs bash"><span class="hljs-comment"># needs a working C compiler, preferably gcc</span>
+./configure --prefix=/usr --sysconfdir=/etc
+make
+[optional] sudo make install
+[optional] sudo make install-config (installs proxychains.conf)</code></pre>
+if you dont install, you can use proxychains from the build directory
 
-              </div>
+<p>like this: ./proxychains4 -f src/proxychains.conf telnet google.com 80</p>
+</details>
+
+<h2 id="0x02-配置"><a href="#0x02-配置" class="headerlink" title="0x02 配置"></a>0x02 配置</h2><h3 id="0x02-1-配置文件生效顺序"><a href="#0x02-1-配置文件生效顺序" class="headerlink" title="0x02.1 配置文件生效顺序"></a>0x02.1 配置文件生效顺序</h3><ol>
+<li><code>-f proxychains.conf</code></li>
+<li><code>./proxychains.conf</code></li>
+<li><code>$(HOME)/.proxychains/proxychains.conf</code></li>
+<li><code>$(sysconfdir)/proxychains.conf</code> | like <code>/etc/proxychains.conf</code></li>
+</ol>
+<h3 id="0x02-2-三种代理模式"><a href="#0x02-2-三种代理模式" class="headerlink" title="0x02.2 三种代理模式"></a>0x02.2 三种代理模式</h3><p><img src="/img/blog_imgs/010-proxychains/001.png" srcset="/img/loading.gif"></img></p>
+<h3 id="0x02-3-ProxyList配置"><a href="#0x02-3-ProxyList配置" class="headerlink" title="0x02.3 ProxyList配置"></a>0x02.3 ProxyList配置</h3><p><img src="/img/blog_imgs/010-proxychains/002.png" srcset="/img/loading.gif"></img></p>
+<h2 id="0x03-使用"><a href="#0x03-使用" class="headerlink" title="0x03 使用"></a>0x03 使用</h2><pre><code class="hljs bash"><span class="hljs-comment"># Common usage</span>
+proxychains sqlmap -u <span class="hljs-string">&quot;xxx.com&quot;</span>
+proxychains telnet xxx.com
+proxychains -f proxychains-other.conf telnet xxx.com</code></pre>
+
+<h2 id="0x04-代理获取"><a href="#0x04-代理获取" class="headerlink" title="0x04 代理获取"></a>0x04 代理获取</h2><ul>
+<li>find proxies by Baidu &amp; Google</li>
+<li><a target="_blank" rel="noopener" href="https://www.kuaidaili.com/free/">https://www.kuaidaili.com/free/</a></li>
+<li><a target="_blank" rel="noopener" href="https://proxy-list.org/english/index.php">https://proxy-list.org/english/index.php</a></li>
+</ul>
+<h2 id="0x05-Python自动化添加代理"><a href="#0x05-Python自动化添加代理" class="headerlink" title="0x05 Python自动化添加代理"></a>0x05 Python自动化添加代理</h2><p>未完待续</p>
+
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Tools/">Tools</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Web/">Web</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/09/30/009-sql-injection/">
+                        <span class="hidden-mobile">SQL Injection</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -298,6 +429,31 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -305,7 +461,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签 - Vulnerability&nbsp;",
+        "Proxychains&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
@@ -320,6 +476,21 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
 
 
   <script  src="/js/local-search.js" ></script>
@@ -333,6 +504,20 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
 
 
 
