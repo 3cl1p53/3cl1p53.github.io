@@ -4,11 +4,38 @@
   
   
   <entry>
+    <title>🔝 常用渗透测试工具集</title>
+    <link href="/2020/10/16/000-pen-tools-index/"/>
+    <url>/2020/10/16/000-pen-tools-index/</url>
+    
+    <content type="html"><![CDATA[<p>｜在线类｜社工类&amp;信息收集类｜抓包类｜扫描类｜框架类｜辅助类｜</p><a id="more"></a><h2 id="0x00-在线类"><a href="#0x00-在线类" class="headerlink" title="0x00 在线类"></a>0x00 在线类</h2><ul><li><a href="https://www.shodan.io/">shodan</a></li><li><a href="https://tool.lu/">在线工具</a></li><li><a href="https://tool.oschina.net/">C在线工具</a></li><li><a href="http://tool.chinaz.com/">站长工具</a></li><li><a href="https://tool.bugku.com/">Bugku-Tool</a></li></ul><h2 id="0x01-社工类-amp-信息收集类"><a href="#0x01-社工类-amp-信息收集类" class="headerlink" title="0x01 社工类 &amp; 信息收集类"></a>0x01 社工类 &amp; 信息收集类</h2><ul><li>crunch</li></ul><h2 id="0x02-抓包类"><a href="#0x02-抓包类" class="headerlink" title="0x02 抓包类"></a>0x02 抓包类</h2><ul><li>wireshark</li></ul><h2 id="0x03-扫描类"><a href="#0x03-扫描类" class="headerlink" title="0x03 扫描类"></a>0x03 扫描类</h2><ul><li>nmap</li><li><a href="/2020/09/26/007-sqlmap/">sqlmap</a></li><li>masscan</li></ul><h2 id="0x04-框架类"><a href="#0x04-框架类" class="headerlink" title="0x04 框架类"></a>0x04 框架类</h2><ul><li>metasploit framework</li></ul><h2 id="0x05-辅助类"><a href="#0x05-辅助类" class="headerlink" title="0x05 辅助类"></a>0x05 辅助类</h2><ul><li><a href="/2020/10/10/010-proxychains/">proxychains</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Index</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Collections</tag>
+      
+      <tag>Tools</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>🔝 LeetCode题目综述</title>
     <link href="/2020/10/11/000-leetcode-index/"/>
     <url>/2020/10/11/000-leetcode-index/</url>
     
-    <content type="html"><![CDATA[<p>主要使用语言：Python｜次要使用语言：Java，Go，C/C++<br>官方网址：<a href="https://leetcode-cn.com/problems/">https://leetcode-cn.com/problems/</a></p><a id="more"></a><h2 id="2-Add-Two-Numbers"><a href="#2-Add-Two-Numbers" class="headerlink" title="[2] Add Two Numbers"></a>[2] Add Two Numbers</h2><p><code>｜难度：Medium｜标签：Linked List, Math｜</code><br>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p><p>Constraints:</p><ul><li>The number of nodes in each linked list is in the range [1, 100].</li><li>0 &lt;= Node.val &lt;= 9</li><li>It is guaranteed that the list represents a number that does not have leading zeros.</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>主要使用语言：Python｜次要使用语言：Java，Go，C/C++<br>官方网址：<a href="https://leetcode-cn.com/problems/">https://leetcode-cn.com/problems/</a><br>解题网址：<a href="https://www.yuque.com/3cl1p53/leetcode">https://www.yuque.com/3cl1p53/leetcode</a></p><a id="more"></a><h2 id="2-Add-Two-Numbers"><a href="#2-Add-Two-Numbers" class="headerlink" title="[2] Add Two Numbers"></a>[2] Add Two Numbers</h2><p><code>｜难度：Medium｜标签：Linked List, Math｜</code><br>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p><p>Constraints:</p><ul><li>The number of nodes in each linked list is in the range [1, 100].</li><li>0 &lt;= Node.val &lt;= 9</li><li>It is guaranteed that the list represents a number that does not have leading zeros.</li></ul><h2 id="1-15-18-N-Sum"><a href="#1-15-18-N-Sum" class="headerlink" title="[1, 15, 18] N Sum"></a>[1, 15, 18] N Sum</h2><p><code>｜难度：Easy｜标签：Array, Hash Table</code><br>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice.You can return the answer in any order.</p><p>Constraints:</p><ul><li>2 &lt;= nums.length &lt;= 105</li><li>-109 &lt;= nums[i] &lt;= 109</li><li>-109 &lt;= target &lt;= 109</li><li>Only one valid answer exists.</li></ul>]]></content>
     
     
     <categories>
@@ -324,7 +351,7 @@
   
   
   <entry>
-    <title>🔝 常用工具集(含网址)</title>
+    <title>🔝 常见工具集(含网址)</title>
     <link href="/2020/09/11/001-tools-index/"/>
     <url>/2020/09/11/001-tools-index/</url>
     
